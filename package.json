@@ -1,0 +1,59 @@
+{
+    "name": "agente-tesla-2026",
+    "version": "1.0.0",
+    "description": "Agente Tesla 2026 - Assistente IA Desktop com 500+ ferramentas integradas",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "electron . --dev",
+        "backend": "node src/backend/server.js",
+        "build": "electron-builder",
+        "build:win": "electron-builder --win",
+        "install-repos": "node installer/setup.js"
+    },
+    "keywords": [
+        "ai",
+        "assistant",
+        "desktop",
+        "electron",
+        "tesla"
+    ],
+    "author": "Agente Tesla 2026",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "socket.io": "^4.6.1",
+        "better-sqlite3": "^9.2.2",
+        "dotenv": "^16.3.1",
+        "cors": "^2.8.5",
+        "axios": "^1.6.5",
+        "marked": "^11.1.1",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "electron": "^28.1.3",
+        "electron-builder": "^24.9.1"
+    },
+    "build": {
+        "appId": "com.tesla.agente2026",
+        "productName": "Agente Tesla 2026",
+        "directories": {
+            "output": "dist"
+        },
+        "files": [
+            "src/**/*",
+            "assets/**/*",
+            "package.json"
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "assets/icon.png"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true
+        }
+    }
+}

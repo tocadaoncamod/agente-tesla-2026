@@ -1,0 +1,125 @@
+/* Voice Controls Styles */
+.voice-controls {
+    padding: 12px 20px;
+    background: var(--bg-tertiary);
+    border-radius: 8px 8px 0 0;
+    min-height: 40px;
+}
+
+.voice-status {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: center;
+}
+
+.voice-status.listening {
+    color: var(--accent-tesla);
+    animation: pulse-text 1.5s infinite;
+}
+
+.voice-status.speaking {
+    color: var(--success);
+}
+
+.voice-status.error {
+    color: var(--error);
+}
+
+@keyframes pulse-text {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.voice-interim {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: var(--bg-primary);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--accent-tesla);
+    font-style: italic;
+    border-left: 3px solid var(--accent-tesla);
+}
+
+/* Microphone Button */
+.mic-btn {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.mic-btn:hover {
+    background: var(--accent-tesla);
+    border-color: var(--accent-tesla);
+    box-shadow: 0 0 20px var(--accent-glow);
+    transform: scale(1.05);
+}
+
+.mic-btn.listening {
+    background: var(--accent-tesla);
+    border-color: var(--accent-tesla);
+    animation: pulse-mic 1.5s infinite;
+    box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.mic-btn.speaking {
+    background: var(--success);
+    border-color: var(--success);
+    animation: pulse-mic 1s infinite;
+}
+
+.mic-btn.error {
+    background: var(--error);
+    border-color: var(--error);
+}
+
+@keyframes pulse-mic {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px var(--accent-glow);
+    }
+}
+
+.mic-icon {
+    font-size: 24px;
+    filter: grayscale(0);
+}
+
+.mic-btn.listening .mic-icon,
+.mic-btn.speaking .mic-icon {
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* Update input wrapper to accommodate mic button */
+.input-wrapper {
+    display: flex;
+    gap: 0;
+    align-items: flex-end;
+}
+
+#message-input {
+    flex: 1;
+}

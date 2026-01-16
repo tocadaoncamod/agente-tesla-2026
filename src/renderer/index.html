@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente Tesla 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="voice-styles.css">
+    <script src="voice.js" defer></script>
+    <script src="voice-integration.js" defer></script>
+</head>
+
+<body>
+    <!-- Custom Title Bar -->
+    <div class="titlebar">
+        <div class="titlebar-drag">
+            <div class="app-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="app-title">Agente Tesla 2026</span>
+            </div>
+        </div>
+        <div class="window-controls">
+            <button class="control-btn" id="minimize-btn" title="Minimizar">─</button>
+            <button class="control-btn" id="maximize-btn" title="Maximizar">□</button>
+            <button class="control-btn close-btn" id="close-btn" title="Fechar">✕</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">💬 Conversas</h3>
+                <button class="new-chat-btn">+ Nova Conversa</button>
+                <div class="chat-history" id="chat-history">
+                    <!-- Histórico será inserido aqui -->
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">🛠️ Ferramentas</h3>
+                <div class="tools-list" id="tools-list">
+                    <div class="tool-item">
+                        <span class="tool-icon">📧</span>
+                        <span class="tool-name">Gmail</span>
+                        <span class="tool-status connected">✓</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">💻</span>
+                        <span class="tool-name">GitHub</span>
+                        <span class="tool-status">✓</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-icon">📂</span>
+                        <span class="tool-name">Drive</span>
+                        <span class="tool-status disconnected">○</span>
+                    </div>
+                </div>
+                <button class="manage-tools-btn" id="manage-tools">Gerenciar</button>
+            </div>
+
+            <div class="sidebar-footer">
+                <button class="settings-btn" id="settings-btn">⚙️ Configurações</button>
+            </div>
+        </aside>
+
+        <!-- Chat Area -->
+        <main class="chat-container">
+            <div class="welcome-screen" id="welcome-screen">
+                <div class="welcome-icon">⚡</div>
+                <h1 class="welcome-title">Agente Tesla 2026</h1>
+                <p class="welcome-subtitle">Seu assistente inteligente com acesso a 500+ ferramentas</p>
+                <div class="capabilities">
+                    <div class="capability-card">
+                        <span class="capability-icon">🤖</span>
+                        <h3>IA Avançada</h3>
+                        <p>Claude, GPT, Grok e mais</p>
+                    </div>
+                    <div class="capability-card">
+                        <span class="capability-icon">🔧</span>
+                        <h3>500+ Ferramentas</h3>
+                        <p>Gmail, GitHub, Drive, Slack...</p>
+                    </div>
+                    <div class="capability-card">
+                        <span class="capability-icon">💾</span>
+                        <h3>Memória Persistente</h3>
+                        <p>Aprende com cada interação</p>
+                    </div>
+                    <div class="capability-card">
+                        <span class="capability-icon">🔒</span>
+                        <h3>100% Seguro</h3>
+                        <p>Credenciais encriptadas AES-256</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messages-container" style="display: none;">
+                <!-- Mensagens aparecerão aqui -->
+            </div>
+
+            <div class="input-container">
+                <!-- Voice Controls -->
+                <div class="voice-controls">
+                    <div class="voice-status" id="voice-status"></div>
+                    <div class="voice-interim" id="voice-interim" style="display:none;"></div>
+                </div>
+
+                <div class="input-wrapper">
+                    <button class="mic-btn" id="mic-btn" title="🎤 Comando de Voz">
+                        <span class="mic-icon">🎤</span>
+                    </button>
+                    <textarea id="message-input"
+                        placeholder="Digite ou fale sua mensagem... (Shift+Enter para nova linha)" rows="1"></textarea>
+                    <button class="send-btn" id="send-btn" disabled>
+                        <span class="send-icon">➤</span>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="status-indicator" id="status">
+                        <span class="status-dot online"></span>
+                        Pronto para ajudar
+                    </span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de Configurações -->
+    <div class="modal" id="settings-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>⚙️ Configurações</h2>
+                <button class="modal-close" id="close-settings">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>🔑 API Keys</h3>
+                    <div class="form-group">
+                        <label>Anthropic API Key:</label>
+                        <input type="password" id="anthropic-key" placeholder="sk-ant-...">
+                    </div>
+                    <div class="form-group">
+                        <label>Composio API Key:</label>
+                        <input type="password" id="composio-key" placeholder="composio_...">
+                    </div>
+                    <button class="save-btn">💾 Salvar</button>
+                </div>
+
+                <div class="settings-section">
+                    <h3>🛠️ Ferramentas Conectadas</h3>
+                    <div id="connected-tools">
+                        <!-- Lista de ferramentas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

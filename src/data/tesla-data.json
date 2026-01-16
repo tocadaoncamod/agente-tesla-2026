@@ -1,0 +1,54 @@
+{
+  "credentials": [
+    [
+      "Gmail",
+      {
+        "encrypted_data": "{\"encrypted\":\"0d875b33f03cfd7dbc3c75a19b7484062850e5e962ed8244f2dac6a51cca5a5a3e81426a284bdfb58e07a61485ac4e5756f4bc05775f26a7b43e4c38750bfbd5413ad004e8169bfa70ca8d6a72814971b57eeb60fd31845ad339ac506e8b8dcf810f4abcb1e486f61c9491caf6a722e204a5694b07f54798eda6f1345039f6831150000b81fd53067e9a2bf5d9f7417e\",\"iv\":\"8415af04dbc702333ee39ba16d92c65e\",\"authTag\":\"698004e4e817ec472550576314111079\"}",
+        "last_used": "2026-01-16T20:56:29.333Z"
+      }
+    ],
+    [
+      "TikTok",
+      {
+        "encrypted_data": "{\"encrypted\":\"b506dc628187c82b3577c88b7afd91b220db5e4cb430fb879702699312ba379ce19298a4b0fde2cf89ece1551c8cdc7a9f8bc5d484befabfcde2999ad9991d042139fe0ecd0ad28223ed34cb014eb4ef8cdeb20f967086dd1e73b4497515da3ab6368b22bb599a91581d4ddec7af54659bc49326e823abe047c8f8456bf1e8fac37cb649c5b4e82284c41a4168451d4ebd478eb5\",\"iv\":\"a5d9d37f2d9a56ce6e2a7c795d9ffae5\",\"authTag\":\"91de09c8d6383b9bb084a8fcbcc8ce96\"}",
+        "last_used": "2026-01-16T20:56:29.360Z"
+      }
+    ],
+    [
+      "WhatsApp",
+      {
+        "encrypted_data": "{\"encrypted\":\"1d374c4fca5abfea5d1ba00c38c8ac6765be8d62efe3371085237d63f8f2690ac2d7cab09a7a31e5038ce1d378e3e316ac17a354c9ef3a5883102eac84492783bb2aa1489f4c4e94fdc1ce1abd59346b79096b418611a840eb9ffca4a533642a4866164a829d766b53339e8ba2\",\"iv\":\"865eadaa00dc95f47acb2bacf74fde17\",\"authTag\":\"b32a1aa33503da560b2fc6cb61cebc7f\"}",
+        "last_used": "2026-01-16T20:56:29.378Z"
+      }
+    ],
+    [
+      "Drive",
+      {
+        "encrypted_data": "{\"encrypted\":\"bad774f5b764fb8ffbbec7cba2a11be4740f06ce302d8dbe4dfb6ab8cee553b54881076ac84453f71fe380c0cac00cf3dc39cb79dc71cfb1f7c064f7ddcb59a7ea26585c83a1a1d4360b16aaf5d277928fe604e69de02be55eab10\",\"iv\":\"dffbac96a1eb94881f64c9aa3e6bc0fe\",\"authTag\":\"33d44eee4f906c794b11d19448f8b0fc\"}",
+        "last_used": "2026-01-16T20:56:29.403Z"
+      }
+    ],
+    [
+      "Calendar",
+      {
+        "encrypted_data": "{\"encrypted\":\"88bb79fd248a61236871ae954249f17492b408447de7c3c7b81db07e6f29b913823ef7a66ae24ddb53ab18067478a891026565635869ab63224a760c99808dc614fecbd34983b146430662dd25c481275f4a434f18893c2076a32e\",\"iv\":\"519e38c140d8f9ae95962e9bdcc531b2\",\"authTag\":\"c4e115a71b1f8df13ba32f88bf0cf262\"}",
+        "last_used": "2026-01-16T20:56:29.422Z"
+      }
+    ],
+    [
+      "Slack",
+      {
+        "encrypted_data": "{\"encrypted\":\"d3ec6bf6560ed3751b2da282dc59777d75a2690dcaeae178ce3f350216f484f60f0fe0f4c8b62a6804fdbed782e6f3ee992b992c02a1\",\"iv\":\"f3e05c473d52a03539400a97d36c9c7d\",\"authTag\":\"aa9c5b0f3f8f9acd9758cd84b2c4ee07\"}",
+        "last_used": "2026-01-16T20:56:29.440Z"
+      }
+    ]
+  ],
+  "conversations": [],
+  "actionLogs": [],
+  "preferences": [
+    [
+      "encryption_key",
+      "8e9f0cffcba9e96b901aa825c4c0a44ec913f20a7b0c20a5b0b3cc1deed9ea9d"
+    ]
+  ]
+}
