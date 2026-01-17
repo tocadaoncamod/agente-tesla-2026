@@ -43,7 +43,58 @@
       }
     ]
   ],
-  "conversations": [],
+  "conversations": [
+    {
+      "role": "user",
+      "message": "hoy turbo",
+      "timestamp": "2026-01-17T03:39:01.443Z"
+    },
+    {
+      "role": "agent",
+      "message": "Olá! Sou o Agente Tesla 2026 ⚡\n\nPergunta: \"hoy turbo\"\n\nPosso ajudar você com:\n📧 Emails (Gmail, Outlook)\n💻 GitHub (repositórios, issues)\n📂 Arquivos (Drive, backup)\n📅 Agenda (Calendar, eventos)\n✓ Tarefas (Todoist, listas)\n⚙️ Comandos do sistema\n\nComo posso ajudar especificamente?",
+      "timestamp": "2026-01-17T03:39:01.462Z"
+    },
+    {
+      "role": "user",
+      "message": "hoy turbo",
+      "timestamp": "2026-01-17T03:39:01.487Z"
+    },
+    {
+      "role": "agent",
+      "message": "Olá! Sou o Agente Tesla 2026 ⚡\n\nPergunta: \"hoy turbo\"\n\nPosso ajudar você com:\n📧 Emails (Gmail, Outlook)\n💻 GitHub (repositórios, issues)\n📂 Arquivos (Drive, backup)\n📅 Agenda (Calendar, eventos)\n✓ Tarefas (Todoist, listas)\n⚙️ Comandos do sistema\n\nComo posso ajudar especificamente?",
+      "timestamp": "2026-01-17T03:39:01.506Z"
+    },
+    {
+      "role": "user",
+      "message": "no sé cuál",
+      "timestamp": "2026-01-17T03:39:25.686Z"
+    },
+    {
+      "role": "agent",
+      "message": "Olá! Sou o Agente Tesla 2026 ⚡\n\nPergunta: \"no sé cuál\"\n\nPosso ajudar você com:\n📧 Emails (Gmail, Outlook)\n💻 GitHub (repositórios, issues)\n📂 Arquivos (Drive, backup)\n📅 Agenda (Calendar, eventos)\n✓ Tarefas (Todoist, listas)\n⚙️ Comandos do sistema\n\nComo posso ajudar especificamente?",
+      "timestamp": "2026-01-17T03:39:25.718Z"
+    },
+    {
+      "role": "user",
+      "message": "voçe pode falr comigo",
+      "timestamp": "2026-01-17T03:39:41.662Z"
+    },
+    {
+      "role": "agent",
+      "message": "Olá! Sou o Agente Tesla 2026 ⚡\n\nPergunta: \"voçe pode falr comigo\"\n\nPosso ajudar você com:\n📧 Emails (Gmail, Outlook)\n💻 GitHub (repositórios, issues)\n📂 Arquivos (Drive, backup)\n📅 Agenda (Calendar, eventos)\n✓ Tarefas (Todoist, listas)\n⚙️ Comandos do sistema\n\nComo posso ajudar especificamente?",
+      "timestamp": "2026-01-17T03:39:41.683Z"
+    },
+    {
+      "role": "user",
+      "message": "voçe tem voz pra falar comiço",
+      "timestamp": "2026-01-17T03:40:02.696Z"
+    },
+    {
+      "role": "agent",
+      "message": "Olá! Sou o Agente Tesla 2026 ⚡\n\nPergunta: \"voçe tem voz pra falar comiço\"\n\nPosso ajudar você com:\n📧 Emails (Gmail, Outlook)\n💻 GitHub (repositórios, issues)\n📂 Arquivos (Drive, backup)\n📅 Agenda (Calendar, eventos)\n✓ Tarefas (Todoist, listas)\n⚙️ Comandos do sistema\n\nComo posso ajudar especificamente?",
+      "timestamp": "2026-01-17T03:40:02.716Z"
+    }
+  ],
   "actionLogs": [],
   "preferences": [
     [

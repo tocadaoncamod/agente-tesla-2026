@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "camiseta masculina - Produto 1",
+    "preco": "R$ 49,90",
+    "categoria": "feminino",
+    "tipo": "roupa",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/123"
+  },
+  {
+    "titulo": "camiseta masculina - Produto 2",
+    "preco": "R$ 79,90",
+    "categoria": "feminino",
+    "tipo": "acessorio",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/456"
+  },
+  {
+    "titulo": "vestido feminino - Produto 1",
+    "preco": "R$ 49,90",
+    "categoria": "feminino",
+    "tipo": "roupa",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/123"
+  },
+  {
+    "titulo": "vestido feminino - Produto 2",
+    "preco": "R$ 79,90",
+    "categoria": "feminino",
+    "tipo": "acessorio",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/456"
+  },
+  {
+    "titulo": "roupa infantil - Produto 1",
+    "preco": "R$ 49,90",
+    "categoria": "feminino",
+    "tipo": "roupa",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/123"
+  },
+  {
+    "titulo": "roupa infantil - Produto 2",
+    "preco": "R$ 79,90",
+    "categoria": "feminino",
+    "tipo": "acessorio",
+    "imagem": "https://via.placeholder.com/400",
+    "link": "https://tiktok.com/shop/product/456"
+  }
+]
