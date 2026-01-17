@@ -34,7 +34,13 @@ const db = new Database();
 const agent = new Agent(db);
 
 // 🌐 Integrate EventBus webhooks
-app.use('/api', eventBus.getWebhookRouter());
+app.use('/api/webhooks', eventBus.getWebhookRouter());
+
+// 🌐 ROTA RAIZ - INTERFACE COMPLETA TESLA
+const publicRouter = require('./routes/public');
+app.use('/', publicRouter);
+
+
 
 // Routes
 app.get('/api/status', (req, res) => {
